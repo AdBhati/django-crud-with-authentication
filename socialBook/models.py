@@ -11,7 +11,7 @@ class Upload(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE, related_name='user_upload', null=True, blank=True)
  
 
-    # no_of_likes = models.IntegerField(default=0)
+    # no_of_likes = models.IntegerField(default=0) some line added by dev
 
     def __str__(self):
         return self.title
